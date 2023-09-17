@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button @click="login">Log in</button>
+  <div class="login-wrapper">
+    <button class="login-button" @click="login">Logg inn</button>
   </div>
 </template>
 <script lang="ts">
@@ -19,3 +19,15 @@
     }
   }
 </script>
+
+<style scoped>
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .login-button {
+    width: 100px;
+    height: 60px;
+  }
+}
+</style>
