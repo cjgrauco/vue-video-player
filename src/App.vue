@@ -10,7 +10,7 @@
   <div>
     <template v-if="!isLoading && isAuthenticated">
       <div class="user-info">
-        <h1>Velkommen {{user.nickname}}</h1>
+        <h1>Velkommen {{user?.nickname}}</h1>
       </div>
       <VideoPlayer />
     </template>
@@ -29,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
   }
 
 </style>
